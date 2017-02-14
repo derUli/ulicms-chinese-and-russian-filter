@@ -1,0 +1,7 @@
+{
+	"id": "chinese_and_russian_filter",
+	"version": "1.0",
+	"description": "chinese_and_russian_filter",
+	"categories": ["antispam", "security", "russian", "chinese"],
+	"compatible_from": "2017.2"
+}

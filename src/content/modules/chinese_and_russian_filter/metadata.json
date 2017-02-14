@@ -1,0 +1,7 @@
+{
+  "embed" : false,
+  "version" : "1.0",
+  "helpers" : {
+    "RuAndChiHelper" : "helpers/ChiAndRuFilterHelper"
+  }
+}
