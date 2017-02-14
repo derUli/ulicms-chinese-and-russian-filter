@@ -6,13 +6,13 @@ class ChiAndRuFilterHelper{
 
   public static function checkPostRequests(){
      if(get_request_method() != "POST"){
-        return true;
+        return false;
      }
      foreach($_POST as $key=>$value){
         if(is_string($_POST[$key]) and self::isChineseOrRussian($_POST[$key])){
-	      return false;
-	}
+	         return true;
+	        }
      }
-	return true;
+	return false;
 }
 }
