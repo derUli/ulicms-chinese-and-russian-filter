@@ -4,7 +4,7 @@ class ChiAndRuFilterHelper {
 		return ( bool ) preg_match ( "/(\p{Han})|(\p{Cyrillic})+/u", $str );
 	}
 	public static function checkPostRequests() {
-		if (get_request_method () != "POST") {
+		if (!Request::isPost()) {
 			return false;
 		}
 		foreach ( $_POST as $key => $value ) {
